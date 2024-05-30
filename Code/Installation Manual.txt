@@ -1,0 +1,46 @@
+Installation Manual
+
+
+This file contains the step-by-step guide to install the Student Spring Symposium management system created by Bindi Pireva.
+
+This web application is hosted on local host using Xampp.
+The database is SQL Database using PhpMyAdmin.
+
+Steps:
+
+1. Download and Install Xampp (using this link): https://www.apachefriends.org/download.html
+
+2. Start XAMPP:
+Open the XAMPP Control Panel.
+Start the Apache and MySQL services by clicking the "Start" button next to each service.
+
+3.Extract the WordPress Files:
+Extract the provided folder (containing your WordPress site) to the htdocs directory of your XAMPP installation. The default path is usually C:\xampp\htdocs\ on Windows or /Applications/XAMPP/htdocs/ on macOS.
+Folder is named "wordpress", extract the folder from the zip file.
+
+4. Set up the database:
+Open your web browser and navigate to the http://localhost/phpmyadmin
+Enter the name for the database "wordpress" and click create
+From the provided zip file take the sql file named "wordpress.sql" and import it by clicking on the import tab. Click "go" to import the database.
+
+5. Configuring WordPress:
+Database configuration by locating the "wp-config.php" and update the database connection settings to match the Xampp set up if needed:
+(If set up is needed) -
+
+ /** The name of the database for WordPress*/
+define('DB_NAME', 'wordpress');
+
+/** MySQL database username */
+define('DB_USER', 'root');
+
+/** MySQL database password */
+define('DB_PASSWORD', '');
+
+/** MySQL hostname */
+define('DB_HOST', 'localhost');
+
+6. If necessary update the site URL and home directly in the database by navigating to the "wp-options" table in PhpMyAdmin. Make the values of "home" and "siteurl" to: "http://localhost/wordpress"
+
+7. Run the WordPress site by opening your web browser and navigating to : "http://localhost/wordpress"
+
+
