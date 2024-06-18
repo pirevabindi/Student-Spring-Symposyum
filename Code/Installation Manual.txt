@@ -43,4 +43,5 @@ define('DB_HOST', 'localhost');
 
 7. Run the WordPress site by opening your web browser and navigating to : "http://localhost/wordpress"
 
-
+8. To log in as organizer and use all the features to manage schedule, view presenters lists and attendance, view certificate info log in with this account:
+ Email: bindi_pireva@hotmail.com     Password: Symposium!0
